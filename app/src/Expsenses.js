@@ -60,7 +60,7 @@ class Expsenses extends Component {
         body : JSON.stringify(item),
       });
       
-      event.peventDefault();
+      event.preventDefault();
       this.props.history.push("/expenses");
     }
 
