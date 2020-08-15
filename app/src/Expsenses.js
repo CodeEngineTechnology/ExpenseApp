@@ -173,7 +173,7 @@ class Expsenses extends Component {
 
                     <FormGroup>
                         <Label for="category" >Category</Label>
-                        <select onChange={this.handleChange}>
+                        <select name="category" onChange={this.handleChange}>
                                 {optionList}
                         </select>
                     
@@ -181,7 +181,7 @@ class Expsenses extends Component {
 
                     <FormGroup>
                         <Label for="city">Date</Label>
-                        <DatePicker    selected={this.state.item.expensedate}  onChange={this.handleDateChange} />
+                        <DatePicker  selected={this.state.item.expensedate}  onChange={this.handleDateChange} />
                     </FormGroup>
 
                     <div className="row">
